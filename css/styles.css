@@ -1,0 +1,31 @@
+body {
+    background-image: url("img/background.jpg");
+    background-color: black;
+}
+
+h4 {
+  color: black;
+}
+
+h3 {
+  color: black;
+}
+
+h5 {
+  color: black;
+}
+
+.order-form {
+  background-color: #B51A21;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#show-price {
+  display: none;
+  color: #FFF;
+}

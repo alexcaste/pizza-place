@@ -28,18 +28,30 @@ Pizza.prototype.price = function(pizzaSize, toppings, quantity) {
 }
 
 $(document).ready(function(){
+  $('#my-select').multiSelect();
+  $('.carousel').carousel({
+    interval: 2000
+  })
+  $('.selectpicker').selectpicker();
 
   var newPizza;
 
-  $("form#pizzaSize").submit(function(event){
+  $("form#pizza").submit(function(event){
       event.preventDefault();
 
       var inputPizzaSize = parseInt($("#pizzaSize").val());
 
+      var inputToppings = ("#toppings").val();
+
+      var inputQuantity = parseInt($("#quantity").val());
+
       newPizza = new Pizza(inputPizzaSize);
+
+      newPizza.toppings = inputToppings;
+
   });
 
-  
+
 });
 
 // indiv = 1
