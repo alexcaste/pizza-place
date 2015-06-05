@@ -27,6 +27,21 @@ Pizza.prototype.price = function(pizzaSize, toppings, quantity) {
   return total;
 }
 
+$(document).ready(function(){
+
+  var newPizza;
+
+  $("form#pizzaSize").submit(function(event){
+      event.preventDefault();
+
+      var inputPizzaSize = parseInt($("#pizzaSize").val());
+
+      newPizza = new Pizza(inputPizzaSize);
+  });
+
+  
+});
+
 // indiv = 1
 // sm = 2
 // med = 3
