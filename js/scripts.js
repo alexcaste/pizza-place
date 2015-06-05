@@ -46,7 +46,6 @@ $(document).ready(function(){
 
   $("form#pizza").submit(function(event){
       event.preventDefault();
-
       var inputPizzaSize = parseInt($("#pizzaSize").val());
 
       var inputToppings = $("#toppings").val();
@@ -60,7 +59,9 @@ $(document).ready(function(){
       var newPizzaPrice = newPizza.price(inputPizzaSize, inputToppings, inputQuantity)
 
       $("#show-price").show();
-      $("#show-price").text(newPizzaPrice);
+      $(".pizza-price").text(newPizzaPrice);
+
+
   });
 
 
