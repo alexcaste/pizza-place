@@ -15,6 +15,10 @@ h5 {
   color: black;
 }
 
+h1 {
+  color: white;
+}
+
 .order-form {
   background-color: #B51A21;
 }
@@ -25,13 +29,9 @@ h5 {
   margin-right: auto;
 }
 
-.contenBlock {
-  .padding: 0px;
-}
-
 #show-price {
   display: none;
-  color: #FFF;
+  background-color: #B51A21;
 }
 
 .top-buffer {
@@ -40,4 +40,4 @@ h5 {
 
 .bottom-buffer {
   margin-bottom:20px;
-  }
+}

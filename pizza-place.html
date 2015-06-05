@@ -49,7 +49,7 @@
   							<img alt="" src="css/img/1.jpg" />
   							<div class="carousel-caption">
   								<h4>
-  									PIZZA
+                    
   								</h4>
   								<p>
   								</p>
@@ -101,7 +101,7 @@
 
   							<!-- Select Pizza -->
   							<div class="col-md-4 column">
-  								<h3 class="text-center">Size*</h3>
+  								<h3 class="lead text-center">Size*</h3>
   								<select  class="selectpicker center-block" id="pizzaSize" >
   									<option value="1" selected>Individual - $10</option>
   									<option value ="2">Small - $12</option>
@@ -109,12 +109,12 @@
   									<option value = "4">Large - $16</option>
   								</select>
                   <br><br>
-  								<h5>*includes our delicious homemade sauce and imported mozerlla.</h5>
+  								<h5>*includes our delicious homemade sauce and imported mozzarella.</h5>
   							</div>
 
   							<!-- Multi-Select Toppings -->
   							<div class="col-md-4 column">
-  								<h3 class="text-center">$1.00 per topping</h3>
+  								<h3 class="lead text-center">$1.00 per topping</h3>
   								<select multiple="multiple" id="toppings" name="toppings[]" class=" center-block">
   									<option value='1'>Pepperoni</option>
   									<option value='2'>Sausage</option>
@@ -135,7 +135,7 @@
 
   							<!-- Number of Pizzas -->
   							<div class="col-md-4 column">
-  								<h3 class="text-center">Quantity*</h3>
+  								<h3 class="lead text-center">Quantity*</h3>
   								<select  class="selectpicker center-block pull-right" id="quantity">
   									<option value="1" selected>1</option>
   									<option value ="2">2</option>
@@ -162,7 +162,7 @@
   					<div class="row clearfix">
 
   						<div class="col-md-12 column bottom-buffer">
-  							<button type="submit" class="btn btn-block ">Place Order</button>
+  							<button type="submit" class="btn btn-block btn-danger">Place Order</button>
   						</div>
               <br>
               <br>
@@ -173,15 +173,13 @@
         <br>
         <br>
   			<!-- Show Price -->
-  			<div class="row clearfix">
-  				<div class="col-md-12 column">
-  					<div class="col-md-4 column">
-  						<div id="show-price">
-                <h2></h2>
-
-  							<h1><span class="pizza-price"></span></h1>
-  						</div>
-  				</div>
+  			<div class="row clearfix ">
+  				<div class="col-md-12 column bottom-buffer">
+						<div id="show-price">
+              <br>
+							<h1 class="lead text-center">Total for your order: $<span class="pizza-price"></span></h1>
+              <br>
+						</div>
   			</div>
   		</div>
   	</div>
