@@ -1,4 +1,4 @@
-//begin Javascript
+//Begin Javascript
 
 function Pizza(pizzaSize) {
   this.pizzaSize=pizzaSize;
@@ -19,7 +19,7 @@ Pizza.prototype.price = function(pizzaSize, toppings, quantity) {
       break;
   }
 
-  var toppingSubtotal = toppings.length * 2;
+  var toppingSubtotal = toppings.length;
   subTotal = subTotal + toppingSubtotal;
 
   var total = subTotal*quantity;
@@ -27,13 +27,21 @@ Pizza.prototype.price = function(pizzaSize, toppings, quantity) {
   return total;
 }
 
+
+//Begin JQuery
+
 $(document).ready(function(){
-  $('#my-select').multiSelect();
+// Multi-Select JS
+  $('#toppings').multiSelect();
+// Carousel JS
   $('.carousel').carousel({
     interval: 2000
   })
+// Selectpicker JS
   $('.selectpicker').selectpicker();
 
+
+//Pizza Form
   var newPizza;
 
   $("form#pizza").submit(function(event){
@@ -41,7 +49,7 @@ $(document).ready(function(){
 
       var inputPizzaSize = parseInt($("#pizzaSize").val());
 
-      var inputToppings = ("#toppings").val();
+      var inputToppings = $("#toppings").val();
 
       var inputQuantity = parseInt($("#quantity").val());
 
@@ -49,6 +57,10 @@ $(document).ready(function(){
 
       newPizza.toppings = inputToppings;
 
+      var newPizzaPrice = newPizza.price(inputPizzaSize, inputToppings, inputQuantity)
+
+      $("#show-price").show();
+      $("#show-price").text(newPizzaPrice);
   });
 
 

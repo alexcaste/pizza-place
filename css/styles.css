@@ -25,6 +25,10 @@ h5 {
   margin-right: auto;
 }
 
+.contenBlock {
+  .padding: 0px;
+}
+
 #show-price {
   display: none;
   color: #FFF;
