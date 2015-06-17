@@ -7,7 +7,7 @@ Alexandar Castaneda
 
 ##Description
 
-This app will return the price of a pizza selected by the user based on the size, toppings and quantity.
+This app will return the price of a pizza selected by the user based on the size, toppings and quantity.  It's pizza.  Delicious stuff - you know it.  Hungry yet?
 
 ##Setup
 
